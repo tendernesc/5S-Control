@@ -1,0 +1,67 @@
+.header{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5px 0 10px 0;
+  height: 62px;
+  justify-content: space-between;
+  border-bottom: .5px solid rgb(218, 204, 204);
+
+}
+
+.header-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  
+}
+
+.header-wrapper__logo_image{
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.header-wrapper__icons{
+  width: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 20px 0 0 460px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 16px;
+  color: white;
+}
+
+.header-wrapper__icons_main:hover{
+  cursor: pointer;
+  color:#FE6100;
+  transition:  .4s ;
+}
+
+.header-wrapper__icons_tasks:hover{
+  cursor: pointer;
+  color:#FE6100;
+  transition:.4s ;
+}
+
+.header-wrapper__icons_contact{
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+  margin-top: -10px;
+}
+
+.header-wrapper__icons_contact:hover{
+  color:#FE6100;
+  border-color: #FE6100;
+  text-decoration: unset;
+  background: transparent;
+  transition:  .4s ;
+}
