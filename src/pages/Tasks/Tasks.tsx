@@ -149,7 +149,7 @@ function Tasks() {
                 <td>{task.name}</td>
                 <td>{task.status}</td>
                 <td>{task.date}</td>
-                <td>
+                <td className="">
                   <button className="tasks-tbody__perf" onClick={() => handleEditTask(task)}>Редактировать</button>
                   <button className="tasks-tbody__delete" onClick={() => {
                     setShowModal(true);
@@ -167,8 +167,8 @@ function Tasks() {
           <div className="modal">
             <div className="modal-content">
               <p>Вы уверены, что хотите удалить задачу?</p>
-              <button onClick={() => handleDeleteTask(taskToDelete!)}>Удалить</button>
-              <button onClick={() => setShowModal(false)}>Отмена</button>
+              <button className="modal-content_b" onClick={() => handleDeleteTask(taskToDelete!)}>Удалить</button>
+              <button className="modal-content_b" onClick={() => setShowModal(false)}>Отмена</button>
             </div>
           </div>
         )}
