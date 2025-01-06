@@ -1,0 +1,37 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px; 
+}
+
+.input-title {
+  font-size: 16px;
+  margin-bottom: 1px; 
+  color: #333;
+}
+
+.input-text {
+  width: 480px; 
+  padding: 8px 0;
+  font-size: 16px;
+  border: none; 
+  border-bottom: 0.5px solid #585757; 
+  background: none; 
+  transition: all 0.3s ease; 
+  outline: none; 
+  color: #fdfdfd;
+  background-color: none;
+}
+
+.input-text::placeholder {
+  color: #ffffff66;; 
+  transition: opacity 0.4s ease; 
+}
+
+.input-text:focus {
+  border-bottom-color: #fff; 
+}
+
+.input-text:focus::placeholder {
+  opacity: 0; 
+}

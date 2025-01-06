@@ -9,11 +9,9 @@ export interface IInput {
   isDisabled: boolean;
   type: string;
   placeholder: string;
-}
-
-export interface ITitle {
-  children: string[] | string;
-  typeTitle: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  name?: string;
+  value?: string; 
 }
 
 export interface IText {
@@ -21,48 +19,13 @@ export interface IText {
   type: string;
 }
 
-export interface IBooks {
-  id: number,
-  image: string,
-  text: string,
-  date: string,
-  lesson_num: number,
-  title: string,
-  description: string,
-  author: number,
-  isbn: string;
+export interface Task {
+  id: string;
+  name: string;
+  status: string;
+  date: string;
 }
 
-export interface ILinks{
-  children: string;
-}
 
-export interface IBook {
-  [x: string]: any;
-  title: string;
-  subtitle: string;
-  isbn13: string;
-  price: string;
-  image: string;
-  url: string;
-  author: string; 
-}
 
-export interface IBooksResponse {
-  error: string;
-  total: string;
-  page: string;
-  books: IBook[];
-}
 
-export interface IBooksProps {
-  currentPage: number;
-  books: IBook[]; 
-  totalPages: number;
-}
-
-export interface IPaginationProps {
-  currentPage: number;
-  totalPages: number;
-  onPageChange: (page: number) => void;
-}

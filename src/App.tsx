@@ -1,15 +1,19 @@
 import './App.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
 import Main from './pages/Main/Main';
-
+import Contact from './pages/Contact/Contact';
+import Tasks from './pages/Tasks/Tasks';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function App() {
   return (
     <>
-      {/* <Header></Header>
-      <Footer></Footer> */}
-      <Main></Main>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/contact' element ={<Contact/>}/>
+          <Route path='/tasks' element={<Tasks/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
