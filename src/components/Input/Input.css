@@ -1,12 +1,12 @@
 .input {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 .input-title {
   font-size: 16px;
-  margin-bottom: 1px; 
+  margin-bottom: 1px;
   color: #333;
 }
 
@@ -14,24 +14,49 @@
   width: 480px; 
   padding: 8px 0;
   font-size: 16px;
-  border: none; 
-  border-bottom: 0.5px solid #585757; 
-  background: none; 
-  transition: all 0.3s ease; 
-  outline: none; 
+  border: none;
+  border-bottom: 0.5px solid #585757;
+  background: none;
+  transition: all 0.3s ease;
+  outline: none;
   color: #fdfdfd;
   background-color: none;
 }
 
 .input-text::placeholder {
-  color: #ffffff66;; 
-  transition: opacity 0.4s ease; 
+  color: #ffffff66;
+  transition: opacity 0.4s ease;
 }
 
 .input-text:focus {
-  border-bottom-color: #fff; 
+  border-bottom-color: #fff;
 }
 
 .input-text:focus::placeholder {
-  opacity: 0; 
+  opacity: 0;
+}
+
+
+@media (max-width: 685px) {
+  .input-text {
+    width: 300px; 
+    font-size: 14px; 
+    padding: 6px 0; 
+  }
+
+  .input-title {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .input-text {
+    width: 200px;
+    font-size: 12px; 
+    padding: 4px 0; 
+  }
+
+  .input-title {
+    font-size: 12px; 
+  }
 }

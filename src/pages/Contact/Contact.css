@@ -35,3 +35,30 @@
   margin-top: 150px;
   margin-bottom: 150px;
 }
+
+@media (max-width: 1164px){
+
+  .contact{
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .contact-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-wrapper__text{
+    width: 450px;
+    margin-top: 140px;
+    margin-bottom: 150px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-wrapper__input{
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
